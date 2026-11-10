@@ -1,0 +1,136 @@
+"use strict";
+/* New Chapter version 3.0 - front-end only. No personal data is sent, saved, or logged. */
+const content = {
+vi:{
+preview:"BẢN XEM TRƯỚC · Chưa tiếp nhận khách hàng hoặc thông tin cá nhân",
+navStudy:"Học tại Singapore",navExplore:"Khám phá trường học",navTools:"Công cụ hỗ trợ",navServices:"Dịch vụ",navResources:"Cẩm nang",navCta:"Tìm hiểu tư vấn ↗",
+heroEyebrow:"NEW CHAPTER · SINGAPORE",heroTitle:"Một hành trình học tập.<br><em>Một tương lai rộng mở.</em>",heroText:"Đồng hành cùng gia đình Việt tìm hiểu giáo dục Singapore, chuẩn bị hồ sơ và lên kế hoạch cho cuộc sống mới — rõ ràng, có định hướng và phù hợp với từng gia đình.",heroPrimary:"Khám phá lộ trình cho con ↗",heroSecondary:"Tìm hiểu dịch vụ ↗",heroTrust:"Đơn vị tư vấn tư nhân tại Singapore · Không phải cơ quan chính phủ",heroIndex:"EDUCATION · FAMILY · SINGAPORE",
+journeyBar:"Tìm hướng đi phù hợp chỉ với 3 bước đơn giản",journey1:"01 · Bậc học",journey2:"02 · Thời gian",journey3:"03 · Nhu cầu",journeyGo:"Bắt đầu khám phá ↗",
+quick1:"Hệ thống giáo dục",quick2:"Khám phá trường học",quick3:"Lộ trình phù hợp",quick4:"Dự trù chi phí",quick5:"Hỗ trợ gia đình",
+pathEyebrow:"BẮT ĐẦU VỚI GIÁO DỤC",pathTitle:"Mỗi độ tuổi, một con đường riêng.",pathIntro:"Tìm hiểu các lộ trình học tập tại Singapore. Điều kiện tuyển sinh và tình trạng chỗ học khác nhau giữa các trường và chương trình.",
+pathOneTitle:"Tiểu học",pathOneText:"Tìm hiểu chương trình, yêu cầu đăng ký và các bước chuẩn bị theo độ tuổi của con.",pathOneLink:"Khám phá lộ trình ↗",pathTwoTitle:"Trung học",pathTwoText:"Khám phá các lựa chọn trường học, điều kiện và thời điểm dự kiến.",pathTwoLink:"Khám phá lộ trình ↗",pathThreeTitle:"Các lộ trình khác",pathThreeText:"Tìm hiểu các cơ sở giáo dục tư thục và chương trình quốc tế phù hợp từng trường hợp.",pathThreeLink:"Tìm hiểu lựa chọn ↗",
+whyTag:"VÌ SAO SINGAPORE?",whyTitle:"Một nơi để học hỏi. Một nơi để trưởng thành.",whyText:"Singapore có nhiều lựa chọn giáo dục và một môi trường sống hiện đại. Chúng tôi giúp phụ huynh nhìn rõ những khác biệt thực tế trước khi quyết định.",why1:"Nhiều chương trình và loại hình trường học",why2:"Hệ thống giao thông và tiện ích kết nối",why3:"Lập kế hoạch học tập và sinh hoạt rõ ràng",
+toolsTag:"CÔNG CỤ TƯƠNG TÁC",toolsTitle:"Thông tin hữu ích, ngay trong tay bạn.",toolsIntro:"Không cần tạo tài khoản. Hãy khám phá các lựa chọn và chi phí tham khảo trước khi yêu cầu tư vấn.",
+plannerTag:"FAMILY JOURNEY PLANNER",plannerTitle:"Tìm hiểu lộ trình của gia đình",plannerDesc:"Ba câu hỏi đơn giản để gợi ý nội dung bạn nên đọc tiếp.",back:"Quay lại",next:"Tiếp tục ↗",viewResults:"Xem gợi ý ↗",restart:"Bắt đầu lại",plannerResultHeading:"Gợi ý bước tiếp theo",plannerResult:"Dựa trên lựa chọn của bạn, hãy bắt đầu với hướng dẫn về nhóm trường, sau đó kiểm tra điều kiện nhập học chính thức và lập dự toán chi phí. Những lựa chọn này không xác định đủ điều kiện tuyển sinh hoặc nhập cư.",plannerResultLink:"Khám phá loại hình trường học ↗",
+budgetTag:"COST PLANNER",budgetTitle:"Dự trù ngân sách của gia đình",budgetDesc:"Tự điều chỉnh chi phí để xem tổng ngân sách ước tính.",fee:"Học phí mỗi năm (S$)",housing:"Chỗ ở mỗi tháng (S$)",living:"Sinh hoạt mỗi tháng (S$)",other:"Chi phí khác mỗi năm (S$)",estimate:"Tổng chi phí ước tính / năm",budgetFine:"Các số mặc định chỉ là ví dụ minh họa, không phải học phí hoặc báo giá đã xác minh. Chưa bao gồm toàn bộ chi phí có thể phát sinh.",
+exploreTag:"SCHOOL EXPLORER",exploreTitle:"Hiểu rõ lựa chọn trường học.",exploreIntro:"Bắt đầu bằng các nhóm trường tại Singapore. Đây là thông tin giới thiệu, chưa phải danh mục trường đã được kiểm chứng theo từng hồ sơ.",filterLabel:"Loại hình trường",filterAll:"Tất cả",filterGov:"Trường công lập",filterIntl:"Trường quốc tế",filterPrivate:"Cơ sở tư thục",schoolNote:"Đối với trường công lập, điều kiện và quy trình quốc tế thay đổi theo cấp học. Luôn kiểm tra thông báo mới nhất từ MOE Singapore.",schoolLink:"Tìm hiểu từ nguồn chính thức ↗",
+servicesTag:"NEW CHAPTER · DỊCH VỤ",servicesTitle:"Đồng hành từ kế hoạch đến thực tế.",servicesIntro:"Hỗ trợ được thiết kế xoay quanh nhu cầu của gia đình. Chúng tôi không hứa trước kết quả tuyển sinh hay giấy phép nhập cư.",
+storyTag:"VỀ NEW CHAPTER",storyTitle:"Sự tin tưởng bắt đầu từ việc hiểu đúng.",storyDesc:"New Chapter là đơn vị tư vấn giáo dục và hỗ trợ gia đình tại Singapore, tập trung phục vụ các gia đình Việt Nam đang tìm hiểu cơ hội học tập cho con. Chúng tôi chú trọng thông tin rõ ràng, quy trình minh bạch và kế hoạch phù hợp với từng hoàn cảnh.",storyProof:"Công ty tư nhân đăng ký tại Singapore · NEW CHAPTER IMMIGRATION J&S PTE. LTD.",
+resourcesTag:"CẨM NANG CHO PHỤ HUYNH",resourcesTitle:"Tìm hiểu trước khi quyết định.",resourcesIntro:"Những chủ đề quan trọng cần tìm hiểu từ nguồn chính thức. Các bài viết chi tiết sẽ được bổ sung và kiểm chứng trước khi xuất bản.",officialSources:"Nguồn chính thức để tham khảo",
+consultTag:"BƯỚC TIẾP THEO",consultTitle:"Bắt đầu chương mới của gia đình.",consultDesc:"New Chapter đang hoàn thiện hệ thống tư vấn. Bạn có thể trải nghiệm bản mẫu mà không cần tạo tài khoản hoặc nhập thông tin cá nhân thật.",consultOne:"✓ Không cần tạo tài khoản",consultTwo:"✓ Dễ sử dụng trên điện thoại",consultThree:"✓ Tư vấn độc lập, rõ ràng",
+demoTag:"DESIGN PREVIEW",demoTitle:"Dùng thử quy trình tư vấn",demoDesc:"Biểu mẫu chưa kết nối hệ thống tiếp nhận, không gửi và không lưu dữ liệu.",demoLevel:"Bậc học quan tâm",demoWhen:"Thời gian dự định",choose:"Chọn một lựa chọn",choose2:"Chọn một lựa chọn",primary:"Tiểu học",secondary:"Trung học",notSure:"Chưa chắc chắn",soon:"Trong 6 tháng",later:"Trong 6–12 tháng",exploring:"Đang tìm hiểu",demoSubmit:"Xem bước tiếp theo ↗",demoWarning:"Vui lòng không nhập dữ liệu cá nhân. Đây chỉ là phiên bản thử nghiệm, chưa phải dịch vụ trực tuyến.",demoMissing:"Vui lòng chọn cả bậc học và thời gian dự định.",demoSuccess:"Bạn đã hoàn tất bản thử nghiệm. Không có thông tin nào được gửi hoặc lưu. Khi hệ thống tư vấn được triển khai, gia đình sẽ được hướng dẫn tiếp theo.",
+footerLegal:"New Chapter là đơn vị tư vấn tư nhân độc lập, không thuộc Chính phủ Singapore. Việc xét tuyển trường học và hồ sơ nhập cư do các trường và cơ quan có thẩm quyền quyết định. Không bảo đảm được phê duyệt.",
+plannerSteps:[
+{title:"Con bạn đang ở bậc học nào?",choices:[["primary","Tiểu học"],["secondary","Trung học"],["other","Khác / chưa rõ"]]},
+{title:"Gia đình đang dự định khi nào?",choices:[["soon","Trong 6 tháng"],["later","Trong 6–12 tháng"],["exploring","Đang tìm hiểu"]]},
+{title:"Điều gia đình quan tâm nhất?",choices:[["schools","Trường học và tuyển sinh"],["documents","Thủ tục và Student's Pass"],["moving","Cuộc sống và chuyển đến Singapore"]]}
+],
+schoolTypes:[
+{type:"government",label:"GOVERNMENT SCHOOLS",title:"Trường công lập",description:"Tìm hiểu quy trình dành cho học sinh quốc tế. Việc đăng ký phụ thuộc vào cấp học, điều kiện và chỗ học hiện có.",url:"https://www.moe.gov.sg/international-students"},
+{type:"international",label:"INTERNATIONAL SCHOOLS",title:"Trường quốc tế",description:"Các trường có chương trình và yêu cầu tuyển sinh khác nhau. Cần xác minh trực tiếp thông tin từ từng trường.",url:"https://www.moe.gov.sg/private-education"},
+{type:"private",label:"PRIVATE EDUCATION",title:"Cơ sở giáo dục tư thục",description:"Tìm hiểu chương trình học, tình trạng đăng ký và khả năng bảo trợ Student's Pass theo từng cơ sở.",url:"https://www.skillsfuture.gov.sg/pei"}
+],
+services:[
+["01","Tư vấn lộ trình giáo dục","Tìm hiểu lựa chọn trường học, cấp học và các yêu cầu đăng ký có thể áp dụng."],
+["02","Hỗ trợ hồ sơ đăng ký trường","Chuẩn bị, kiểm tra danh sách giấy tờ và phối hợp từng bước theo yêu cầu trường học."],
+["03","Hướng dẫn Student's Pass","Giải thích quy trình và tài liệu cần thiết; việc xét duyệt thuộc quyền cơ quan có thẩm quyền."],
+["04","Phụ huynh và người giám hộ","Tìm hiểu những phương án đồng hành, bảo lãnh và chăm sóc phù hợp với quy định."],
+["05","Sắp xếp cuộc sống tại Singapore","Hỗ trợ lập kế hoạch về chỗ ở, di chuyển, sinh hoạt và các bước chuẩn bị."]
+],
+resources:[
+["HỆ THỐNG TRƯỜNG HỌC","Tìm hiểu các lựa chọn giáo dục ở Singapore","Điểm khác nhau giữa các loại hình trường và những câu hỏi phụ huynh cần đặt ra."],
+["CHUẨN BỊ HỒ SƠ","Student's Pass: bắt đầu từ đâu?","Tìm hiểu điều kiện chung, thứ tự chuẩn bị và trách nhiệm của các bên."],
+["CUỘC SỐNG TẠI SINGAPORE","Chuẩn bị ngân sách cho cả gia đình","Những khoản chi phí thường cần tính trước khi đưa ra quyết định."]
+]
+},
+en:{
+preview:"DESIGN PREVIEW · Not accepting customers or personal information",
+navStudy:"Study in Singapore",navExplore:"School explorer",navTools:"Planning tools",navServices:"Services",navResources:"Resources",navCta:"Explore consultation ↗",
+heroEyebrow:"NEW CHAPTER · SINGAPORE",heroTitle:"An education journey.<br><em>A brighter tomorrow.</em>",heroText:"Helping Vietnamese families explore Singapore education, prepare applications and plan for family life with clear, personalised guidance.",heroPrimary:"Explore your child's pathway ↗",heroSecondary:"Discover our services ↗",heroTrust:"Independent private consultancy in Singapore · Not a government agency",heroIndex:"EDUCATION · FAMILY · SINGAPORE",
+journeyBar:"Find a starting point in three simple steps",journey1:"01 · School level",journey2:"02 · Timeline",journey3:"03 · Priorities",journeyGo:"Explore your journey ↗",
+quick1:"Education system",quick2:"School explorer",quick3:"Family pathway",quick4:"Cost planner",quick5:"Family support",
+pathEyebrow:"BEGIN WITH EDUCATION",pathTitle:"A different pathway for every age.",pathIntro:"Explore education options in Singapore. Admission requirements and availability vary between schools and programmes.",
+pathOneTitle:"Primary school",pathOneText:"Understand programmes, registration requirements and planning steps appropriate to your child's age.",pathOneLink:"Explore pathways ↗",pathTwoTitle:"Secondary school",pathTwoText:"Explore school options, admissions requirements and potential timelines.",pathTwoLink:"Explore pathways ↗",pathThreeTitle:"Other pathways",pathThreeText:"Learn about relevant private education and international programmes where applicable.",pathThreeLink:"Explore options ↗",
+whyTag:"WHY SINGAPORE?",whyTitle:"A place to learn. A place to grow.",whyText:"Singapore offers different education options and a modern living environment. We help parents understand practical differences before making decisions.",why1:"A variety of curricula and school types",why2:"Connected transport and everyday amenities",why3:"Clearer planning for education and daily life",
+toolsTag:"INTERACTIVE TOOLS",toolsTitle:"Helpful information, at your fingertips.",toolsIntro:"No account needed. Explore options and illustrative budgets before considering a consultation.",
+plannerTag:"FAMILY JOURNEY PLANNER",plannerTitle:"Explore your family's pathway",plannerDesc:"Three simple questions to suggest what to read next.",back:"Back",next:"Continue ↗",viewResults:"View guidance ↗",restart:"Start again",plannerResultHeading:"Suggested next steps",plannerResult:"Based on your selections, start by exploring school categories, then verify official admission requirements and plan a budget. These selections do not establish admission or immigration eligibility.",plannerResultLink:"Explore school types ↗",
+budgetTag:"COST PLANNER",budgetTitle:"Plan an illustrative family budget",budgetDesc:"Adjust the assumptions to see an estimated annual total.",fee:"Annual tuition (S$)",housing:"Monthly accommodation (S$)",living:"Monthly living expenses (S$)",other:"Other annual costs (S$)",estimate:"Illustrative total per year",budgetFine:"The starting figures are examples only, not verified school fees or quotations. Other expenses may apply.",
+exploreTag:"SCHOOL EXPLORER",exploreTitle:"Understand your school options.",exploreIntro:"Explore broad school categories in Singapore. This is an introduction, not a verified directory or personalised school recommendation.",filterLabel:"School category",filterAll:"All categories",filterGov:"Government schools",filterIntl:"International schools",filterPrivate:"Private education",schoolNote:"For government schools, international admission pathways differ by level. Check the latest MOE Singapore requirements.",schoolLink:"Read official guidance ↗",
+servicesTag:"NEW CHAPTER · SERVICES",servicesTitle:"From planning to practical arrangements.",servicesIntro:"Support shaped around each family's needs. We do not promise school admission or immigration approval.",
+storyTag:"ABOUT NEW CHAPTER",storyTitle:"Trust begins with understanding.",storyDesc:"New Chapter is a Singapore-based education and family relocation consultancy focused on helping Vietnamese families explore education opportunities for their children. We believe in clear information, transparent processes and plans appropriate to each family's circumstances.",storyProof:"A private company registered in Singapore · NEW CHAPTER IMMIGRATION J&S PTE. LTD.",
+resourcesTag:"RESOURCES FOR PARENTS",resourcesTitle:"Explore before you decide.",resourcesIntro:"Important topics to research using official information. Detailed articles will be added only after fact-checking.",officialSources:"Official sources for reference",
+consultTag:"THE NEXT STEP",consultTitle:"Begin your family's next chapter.",consultDesc:"New Chapter is preparing its consultation system. You can explore the demonstration without an account or entering real personal data.",consultOne:"✓ No account required",consultTwo:"✓ Easy to use on mobile",consultThree:"✓ Clear independent guidance",
+demoTag:"DESIGN PREVIEW",demoTitle:"Try the consultation journey",demoDesc:"This form is not connected to any enquiry or storage service.",demoLevel:"School level of interest",demoWhen:"Intended timeline",choose:"Choose an option",choose2:"Choose an option",primary:"Primary",secondary:"Secondary",notSure:"Not sure",soon:"Within 6 months",later:"Within 6–12 months",exploring:"Just exploring",demoSubmit:"See the next step ↗",demoWarning:"Do not enter personal information. This is a demonstration, not a live service.",demoMissing:"Please select both a school level and a timeline.",demoSuccess:"You have completed the demo successfully. Nothing was submitted or stored. The future consultation service will explain the following steps.",
+footerLegal:"New Chapter is an independent private consultancy, not a Singapore government agency. Schools and relevant authorities determine admission and immigration applications. Approval is not guaranteed.",
+plannerSteps:[
+{title:"Which school level are you exploring?",choices:[["primary","Primary school"],["secondary","Secondary school"],["other","Other / unsure"]]},
+{title:"When are you considering Singapore?",choices:[["soon","Within 6 months"],["later","Within 6–12 months"],["exploring","Still exploring"]]},
+{title:"What is your main priority?",choices:[["schools","Schools and admissions"],["documents","Documents and Student's Pass"],["moving","Relocation and family life"]]}
+],
+schoolTypes:[
+{type:"government",label:"GOVERNMENT SCHOOLS",title:"Government schools",description:"Explore international student admissions. Processes depend on school level, eligibility and places available.",url:"https://www.moe.gov.sg/international-students"},
+{type:"international",label:"INTERNATIONAL SCHOOLS",title:"International schools",description:"Different schools offer different curricula and admissions criteria. Verify information directly with each school.",url:"https://www.moe.gov.sg/private-education"},
+{type:"private",label:"PRIVATE EDUCATION",title:"Private education institutions",description:"Consider programme suitability, institutional registration and Student's Pass eligibility when applicable.",url:"https://www.skillsfuture.gov.sg/pei"}
+],
+services:[
+["01","Education pathway guidance","Explore school levels, education options and potentially applicable admission requirements."],
+["02","School application support","Prepare and organise documents and coordinate steps based on individual school requirements."],
+["03","Student's Pass guidance","Understand relevant procedures and documentation; authorities make final decisions."],
+["04","Parent and guardian guidance","Learn about applicable accompanying, sponsorship and care arrangements."],
+["05","Life in Singapore planning","Prepare for accommodation, transport, daily life and practical relocation steps."]
+],
+resources:[
+["SCHOOL SYSTEM","Understanding Singapore education options","A starting point for comparing school categories and asking the right questions."],
+["APPLICATION PREPARATION","Where to begin with Student's Pass","Understand general requirements, preparation sequence and key responsibilities."],
+["LIVING IN SINGAPORE","Planning your family's budget","The expense categories families may wish to consider in advance."]
+]
+}
+};
+let lang="vi",currentStep=0;
+let answers=["primary","exploring","schools"];
+const q=id=>document.getElementById(id);
+function escapeText(value){return String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function renderCopy(){
+const c=content[lang];document.documentElement.lang=lang;
+document.querySelectorAll("[data-i18n]").forEach(el=>{const value=c[el.dataset.i18n];if(typeof value==="string")el.innerHTML=value});
+q("languageToggle").textContent=lang==="vi"?"EN ↗":"VI ↗";
+q("languageToggle").setAttribute("aria-label",lang==="vi"?"Switch to English":"Chuyển sang Tiếng Việt");
+q("serviceGrid").innerHTML=c.services.map(x=>'<article class="service-card"><span class="service-number">'+escapeText(x[0])+' / NEW CHAPTER</span><div><h3>'+escapeText(x[1])+'</h3><p>'+escapeText(x[2])+'</p></div></article>').join("");
+q("resourceGrid").innerHTML=c.resources.map(x=>'<article class="resource-card"><div class="resource-photo" role="img" aria-label="Educational editorial photograph"></div><div class="resource-body"><span>'+escapeText(x[0])+'</span><h3>'+escapeText(x[1])+'</h3><p>'+escapeText(x[2])+'</p></div></article>').join("");
+q("demoStatus").textContent="";
+renderSchools();renderPlanner();renderBudget();
+}
+function renderSchools(){
+const c=content[lang],filter=q("schoolFilter").value,schools=c.schoolTypes.filter(s=>filter==="all"||s.type===filter);
+q("schoolCards").innerHTML=schools.map(s=>'<article class="school-card"><div><span class="school-type">'+escapeText(s.label)+'</span><h3>'+escapeText(s.title)+'</h3><p>'+escapeText(s.description)+'</p></div><a href="'+s.url+'" target="_blank" rel="noopener noreferrer">'+escapeText(c.schoolLink)+'</a></article>').join("");
+}
+function renderPlanner(){
+const c=content[lang],item=c.plannerSteps[currentStep];
+q("plannerCount").textContent="0"+(currentStep+1)+" / 03";
+q("plannerProgress").style.width=((currentStep+1)/3*100)+"%";
+q("plannerQuestions").innerHTML='<h4 class="planner-prompt">'+escapeText(item.title)+'</h4><div class="option-list">'+item.choices.map(x=>'<button type="button" class="option '+(answers[currentStep]===x[0]?'active':'')+'" data-choice="'+escapeText(x[0])+'" aria-pressed="'+(answers[currentStep]===x[0]?'true':'false')+'"><span class="radio"></span>'+escapeText(x[1])+'</button>').join("")+'</div>';
+q("plannerQuestions").querySelectorAll("[data-choice]").forEach(b=>b.addEventListener("click",()=>{answers[currentStep]=b.dataset.choice;renderPlanner()}));
+q("plannerBack").disabled=currentStep===0;
+q("plannerNext").textContent=currentStep===2?c.viewResults:c.next;
+q("plannerResults").hidden=true;
+}
+function renderBudget(){
+const ids=["tuition","housing","living","extras"];
+const nums=ids.map(id=>{const v=Number(q(id).value);return Number.isFinite(v)?Math.min(2000000,Math.max(0,v)):0});
+const total=nums[0]+12*nums[1]+12*nums[2]+nums[3];
+q("budgetTotal").textContent="S$"+new Intl.NumberFormat("en-SG",{maximumFractionDigits:0}).format(total);
+}
+q("languageToggle").addEventListener("click",()=>{lang=lang==="vi"?"en":"vi";renderCopy()});
+q("schoolFilter").addEventListener("change",renderSchools);
+["tuition","housing","living","extras"].forEach(id=>q(id).addEventListener("input",renderBudget));
+q("plannerBack").addEventListener("click",()=>{if(currentStep>0){currentStep--;renderPlanner()}});
+q("plannerNext").addEventListener("click",()=>{
+if(currentStep<2){currentStep++;renderPlanner();return;}
+const c=content[lang];
+q("plannerResults").innerHTML='<h4>'+escapeText(c.plannerResultHeading)+'</h4><p>'+escapeText(c.plannerResult)+'</p><a href="#explore">'+escapeText(c.plannerResultLink)+'</a>';
+q("plannerResults").hidden=false;
+});
+q("demoForm").addEventListener("submit",e=>{e.preventDefault();q("demoStatus").textContent=q("demoLevel").value&&q("demoWhen").value?content[lang].demoSuccess:content[lang].demoMissing});
+q("menuToggle").addEventListener("click",()=>{const opened=q("primaryNav").classList.toggle("open");q("menuToggle").setAttribute("aria-expanded",String(opened));q("menuToggle").setAttribute("aria-label",opened?"Close menu":"Open menu")});
+q("primaryNav").querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{q("primaryNav").classList.remove("open");q("menuToggle").setAttribute("aria-expanded","false")}));
+renderCopy();
