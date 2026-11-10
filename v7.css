@@ -28,3 +28,13 @@
 @media(max-width:600px){.site-header{height:70px}.brand-name{font-size:18px}.brand-caption{font-size:5.8px}.head-controls{gap:5px}.lang-switch button{padding:7px 8px}.hero-photo{object-position:58% 60%}}
 .photo-attribution{font-size:10px;line-height:2;color:#b7cbc6;margin-top:20px}
 .photo-attribution a{color:#e5b797;text-decoration:underline;text-underline-offset:3px}
+
+
+/* Clean public footer and discreet company information */
+.footer-links{display:flex;flex-direction:column;gap:18px;align-items:flex-start;justify-content:center}
+.footer-links a{font-size:12px;color:#d4e2d9;text-decoration:none;border-bottom:1px solid #577873;padding-bottom:5px}
+.footer-links a:hover{color:#fff;border-color:#fff}
+.legal-page{max-width:850px}
+.legal-page h2{font:400 31px/1.25 var(--serif);margin:28px 0 10px}
+.legal-page p{font-size:13px;line-height:2;color:#425e60}
+.legal-page a{text-decoration:underline;text-underline-offset:3px}
