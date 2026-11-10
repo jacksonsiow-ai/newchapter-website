@@ -87,3 +87,21 @@
 @media(max-width:1050px){.story-grid,.planner-layout{gap:35px}.story-pictures{min-height:360px}.story-pictures figure:first-child{height:355px}.story-pictures figure:last-child{height:250px}}
 @media(max-width:900px){.story-grid,.planner-layout{grid-template-columns:1fr}.story-pictures{max-width:720px}.living-grid{grid-template-columns:1fr 1fr}.living-grid .living-tile:nth-child(3){display:none}.living-grid .living-tile:nth-child(2){margin-top:0;height:440px}.hero:after{right:-80px}.visual-story,.living-section,.planner-section{padding:70px 0}}
 @media(max-width:600px){.language-control{gap:1px;padding:3px}.lang-option{padding:8px 9px;min-width:33px;font-size:10px}.brandtext small{letter-spacing:0}.header .wrap{height:69px}.hero,.hero .wrap{min-height:660px}.hero h1{font-size:43px}.hero:after{right:-135px;opacity:.35}.hero .hero-support{gap:12px 17px}.service-section{padding-top:83px}.service-card{min-height:0}.service-card .service-cover,.service-card .service-photo{height:220px}.story-grid{gap:26px}.story-pictures{min-height:0;gap:9px}.story-pictures figure:first-child{height:280px}.story-pictures figure:last-child{height:200px}.living-grid{grid-template-columns:1fr 1fr;gap:8px}.living-tile,.living-grid .living-tile:nth-child(2){height:270px}.living-tile:first-child{height:300px}.living-tile figcaption{font-size:17px;padding:25px 10px 12px}.living-tile small{font-size:8px}.planner-panel{padding:20px}.planner-options{grid-template-columns:1fr}.planner-panel h3{font-size:27px}.photo-art .art-words{font-size:33px}.photo-art .topline,.photo-art .art-words,.photo-art .art-bottom{margin-left:26px;margin-right:26px}.contact .btn{white-space:normal}}
+
+
+/* v6.2.1 image correction: show the subject, never a blank sky crop */
+.service-card .service-cover{background:#dce6df}
+.service-card .service-photo,.service-card .service-cover img{object-fit:cover;object-position:center 57%;width:100%;height:100%}
+.service-card:nth-child(1) img{object-position:center 51%}
+.service-card:nth-child(2) img{object-position:center 64%}
+.service-card:nth-child(3) img{object-position:center 66%}
+.service-card:nth-child(4) img{object-position:center 74%}
+.service-card:nth-child(5) img{object-position:center 59%}
+.service-card:nth-child(6) img{object-position:center 62%}
+.photo-unavailable{background:linear-gradient(135deg,#cbded2,#dde5de)!important}
+.photo-unavailable:before{content:"NEW CHAPTER · SINGAPORE";font:700 13px/1.6 "DM Sans",sans-serif;letter-spacing:.1em;position:absolute;top:45%;left:10%;right:10%;text-align:center;color:#294858}
+.photo-unavailable .image-label{z-index:2}
+.story-pictures img,.living-tile img,.photo-art img{object-position:center 59%}
+.living-tile:nth-child(1) img{object-position:center 45%}
+.living-tile:nth-child(2) img{object-position:center 67%}
+.living-tile:nth-child(3) img{object-position:center 59%}
