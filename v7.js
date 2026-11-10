@@ -57,7 +57,7 @@ byId("top-stripe").textContent=d.strap;
 byId("nav").innerHTML=[["#/","menu",0],["#/why","menu",1],["#/services","menu",2],["#/offers","menu",3],["#/contact","menu",4]].map(([href,k,i])=>navLink(href,d[k][i])).join("");
 byId("header-cta").textContent=d.contact;
 for(const k of ["vi","en"]){const el=byId("lang-"+k);el.classList.toggle("active",lang===k);el.setAttribute("aria-pressed",String(lang===k))}
-byId("footer-legal").textContent=d.footerLegal;
+byId("footer-contact").textContent=d.contact;byId("footer-company").textContent=lang==="vi"?"Thông tin doanh nghiệp":"Company information";
 byId("version").textContent="© NEW CHAPTER";
 }
 function homepage(){
@@ -77,6 +77,7 @@ function details(key){
 const d=WORDS[lang],s=service(key);document.title=s.title+" | NEW CHAPTER";
 return '<section class="detail-hero"><div class="container"><div class="crumb">'+navLink("#/",d.menu[0])+' / '+esc(s.title)+'</div><span class="eyebrow" style="color:#f1c6a9;margin-top:32px">'+esc(raw[key].tag)+'</span><h1>'+esc(s.title)+'</h1><p class="lead">'+esc(s.intro)+'</p></div></section><section class="section"><div class="container detail-main"><div><div class="detail-section"><h2>'+esc(s.title)+'</h2><p>'+esc(s.intro)+'</p></div><div class="detail-section"><h2>'+esc(d.detailPrep)+'</h2>'+asList(s.prep)+'</div><div class="detail-section"><h2>'+esc(d.detailKnow)+'</h2>'+asList(s.rules)+'</div><div class="detail-section"><h2>'+esc(d.detailHelp)+'</h2>'+asList(s.help)+'</div><div class="detail-section"><h2>'+esc(d.detailWarning)+'</h2><p>'+esc(s.caution)+'</p><p>'+esc(d.detailBound)+'</p></div></div><aside class="detail-sidebar"><h3>'+esc(d.detailSide)+'</h3><p>'+esc(d.detailSideText)+'</p>'+navLink("#/contact?service="+key,d.contact,"btn")+'<p class="detail-footnote">'+esc(d.noBooking)+'</p></aside></div></section>';
 }
+function legalPage(){const vi=lang==="vi";document.title=(vi?"Thông tin doanh nghiệp":"Company information")+" | NEW CHAPTER";return '<section class="detail-hero"><div class="container"><span class="eyebrow">NEW CHAPTER · SINGAPORE</span><h1>'+(vi?"Thông tin doanh nghiệp":"Company information")+'</h1></div></section><section class="section"><div class="container legal-page"><h2>'+(vi?"Đơn vị kinh doanh":"Business entity")+'</h2><p>NEW CHAPTER IMMIGRATION J&S PTE. LTD.<br>UEN 202439229W · Singapore</p><h2>'+(vi?"Giới thiệu dịch vụ":"About our services")+'</h2><p>'+(vi?"New Chapter là đơn vị tư vấn tư nhân. Quyết định tuyển sinh và cấp phép thuộc về cơ quan hoặc trường học có thẩm quyền.":"New Chapter provides private consultancy services. Schools and relevant authorities make their own admissions and application decisions.")+'</p><h2>'+(vi?"Thông tin hình ảnh":"Image credits")+'</h2><p>'+(vi?"Ảnh Trường Tiểu học Jurong:":"Jurong Primary School photograph:")+' <a href="https://commons.wikimedia.org/wiki/File:Jurong_Primary_School.jpg" target="_blank" rel="noopener noreferrer">Leejiaxin96 / Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> ('+(vi?"đã cắt ảnh để phù hợp bố cục":"cropped for page layout")+'). '+(vi?"Ảnh phong cảnh khác: các tác giả trên Unsplash.":"Other location photography: Unsplash contributors.")+'</p></div></section>';}
 function consult(){
 const d=WORDS[lang];document.title=d.contact+" | NEW CHAPTER";
 return '<section class="consult-hero"><div class="container consult-layout"><div><span class="eyebrow">'+esc(d.ctaTag)+'</span><h1 class="heading">'+esc(d.contactHeading)+'</h1><p class="lead">'+esc(d.contactDesc)+'</p><p class="cta-note">'+esc(d.noBooking)+'</p></div><div class="consult-box"><h2>'+esc(d.contactQuestion)+'</h2><form id="interest-form"><label for="interest">'+esc(d.contactPlaceholder)+'</label><select id="interest" required><option value="">'+esc(d.contactPlaceholder)+'</option>'+KEYS.map(k=>'<option value="'+k+'">'+esc(service(k).title)+'</option>').join("")+'</select><button type="submit" class="btn">'+esc(d.contactSubmit)+'</button><div id="interest-result" aria-live="polite"></div></form><p class="notice">'+esc(d.contactReminder)+'</p></div></div></section>';
@@ -92,7 +93,7 @@ f.addEventListener("submit",ev=>{ev.preventDefault();const key=byId("interest").
 }
 function navigate(){
 shell();const hash=location.hash||"#/";const key=hash.startsWith("#/service/")?hash.slice(10).split("?")[0]:"";
-byId("app").innerHTML=KEYS.includes(key)?details(key):hash.startsWith("#/contact")?consult():homepage();
+byId("app").innerHTML=KEYS.includes(key)?details(key):hash.startsWith("#/legal")?legalPage():hash.startsWith("#/contact")?consult():homepage();
 wirePlanner();wireConsult(hash);
 const menu=byId("nav");menu.classList.remove("open");byId("menu-btn").setAttribute("aria-expanded","false");
 const anchors={"#/why":"why","#/services":"services","#/offers":"offers"};
