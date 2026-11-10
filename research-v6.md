@@ -45,3 +45,16 @@ The photo library intentionally does not contain staged stock families pretendin
 - Enquiry form still preview-only: no personal information entered, submitted or stored.
 - Homepage is more visually immersive and responsive, with image cards, Singapore story, gallery, family LTVP feature and action buttons.
 - Search indexing disabled via noindex while customer contact and data-protection procedures remain incomplete.
+
+## Version 6.2.1 emergency visual correction — 10 Nov 2026
+User observed actual broken-looking photo crops. The prior image selection was inadequate and source tags described content not visible in cards. The following correction supersedes the v6.2 image list for the visible card design:
+- Education: school-uniformed students in Singapore, photographer Francesco Pinto, https://unsplash.com/photos/a-group-of-young-people-standing-in-front-of-a-building-pDpOaQPByLs, image https://images.unsplash.com/photo-1640111789692-951e2afb2ba6. This is an educational-life illustration, NOT a school building or partner school.
+- Accompanying parent: family outdoors in Singapore Botanic Gardens, Sang Kwak, https://unsplash.com/photos/people-enjoying-a-sunny-day-in-a-lush-green-park-hdhG-bof6e0, image https://images.unsplash.com/photo-1771767435868-e3141980fcb1.
+- Family relocation: HDB neighbourhood Jurong West, Joshua Leong, https://unsplash.com/photos/a-walkway-with-trees-and-buildings-in-the-background-6VPFnzkRchg, image https://images.unsplash.com/photo-1655027766428-7faa226db325.
+- PR: existing original Singapore hero image https://images.unsplash.com/photo-1514612714221-9a54c860cb0f. This is decorative Singapore imagery, not PR-specific activity.
+- Citizenship: Gardens by the Bay Supertrees, photographer Gigi or another listed photographer per the original Unsplash photo page (the specific photograph's attribution should be rechecked), https://images.unsplash.com/photo-1506351421178-63b52a2d2562.
+- Documentation: NUS exterior green walkway, Andy Wang, https://unsplash.com/photos/a-walkway-with-plants-and-a-building-4o6tTDTbs7A, image https://images.unsplash.com/photo-1669348144005-89884f5f997e. This is a campus image, NOT a government immigration agency or processing office.
+- Supplementary campus green exterior: https://unsplash.com/photos/a-very-tall-building-with-lots-of-plants-growing-on-it-RdAAShAsCzA, photo https://images.unsplash.com/photo-1673677794341-b65fc030c737.
+
+Removed "Nanyang Primary School" captions because the new photograph is of students, not that school. Removed generic image fallback that repeated one sky scene on failures; a neutral graphic placeholder now appears if image loading fails.
+Do not assert that these replacements have been verified in live browser until an actual browser inspection is completed.
