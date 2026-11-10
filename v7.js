@@ -31,7 +31,7 @@ footerLegal:"NEW CHAPTER IMMIGRATION J&S PTE. LTD. · UEN 202439229W. An indepen
 const PHOTO={
 hero:{url:"https://images.unsplash.com/photo-1514612714221-9a54c860cb0f?auto=format&fit=crop&w=2200&q=85",alt:"Singapore skyline at Marina Bay"},
 family:{url:"https://images.unsplash.com/photo-1771767435868-e3141980fcb1?auto=format&fit=crop&w=1400&q=82",alt:"Public green space at Singapore Botanic Gardens"},
-education:{url:"https://images.unsplash.com/photo-1640111789692-951e2afb2ba6?auto=format&fit=crop&w=1200&q=82",alt:"Students photographed in Singapore"},
+education:{url:"https://upload.wikimedia.org/wikipedia/commons/c/c8/Jurong_Primary_School.jpg",alt:"Exterior of Jurong Primary School in Singapore. Photograph by Leejiaxin96, CC BY 4.0"},
 community:{url:"https://images.unsplash.com/photo-1655027766428-7faa226db325?auto=format&fit=crop&w=1200&q=82",alt:"Jurong West residential neighbourhood in Singapore"},
 gardens:{url:"https://images.unsplash.com/photo-1506351421178-63b52a2d2562?auto=format&fit=crop&w=1200&q=82",alt:"Gardens by the Bay Supertrees in Singapore"}
 };
@@ -47,7 +47,7 @@ const KEYS=["education","parent","family","pr","citizenship","documents"];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const byId=id=>document.getElementById(id);
 let lang="vi";try{const p=window.localStorage.getItem("nc-lang");if(p==="en"||p==="vi")lang=p}catch(e){}
-const img=(key,priority=false)=>{const p=PHOTO[key];return '<img '+(priority?'fetchpriority="high"':'loading="lazy"')+' decoding="async" src="'+p.url+'" alt="'+esc(p.alt)+'">'}
+const img=(key,priority=false)=>{const p=PHOTO[key];return '<img '+(priority?'fetchpriority="high"':'loading="lazy"')+' decoding="async" src="'+p.url+'" alt="'+esc(p.alt)+'" onerror="this.onerror=null;this.style.opacity=0;this.parentElement.classList.add(\'image-unavailable\')">'}
 const navLink=(href,label,klass="")=>'<a href="'+href+'" class="'+klass+'">'+esc(label)+'</a>';
 const head=(tag,h,desc)=>'<div class="section-head"><div><span class="eyebrow">'+esc(tag)+'</span><h2 class="heading">'+h+'</h2></div><p class="lead">'+esc(desc)+'</p></div>';
 const service=s=>({slug:s,title:raw[s][lang][0],intro:raw[s][lang][1],prep:raw[s][lang][2],rules:raw[s][lang][3],help:raw[s][lang][4],caution:raw[s][lang][5]});
@@ -75,7 +75,7 @@ return '<section class="hero">'+img("hero",true)+'<div class="container hero-inn
 function asList(a){return '<ul>'+a.map(x=>'<li>'+esc(x)+'</li>').join("")+'</ul>'}
 function details(key){
 const d=WORDS[lang],s=service(key);document.title=s.title+" | NEW CHAPTER";
-return '<section class="detail-hero"><div class="container"><div class="crumb">'+navLink("#/",d.menu[0])+' / '+esc(s.title)+'</div><span class="eyebrow" style="color:#f1c6a9;margin-top:32px">'+esc(raw[key].tag)+'</span><h1>'+esc(s.title)+'</h1><p class="lead">'+esc(s.intro)+'</p></div></section><section class="section"><div class="container detail-main"><main><div class="detail-section"><h2>'+esc(s.title)+'</h2><p>'+esc(s.intro)+'</p></div><div class="detail-section"><h2>'+esc(d.detailPrep)+'</h2>'+asList(s.prep)+'</div><div class="detail-section"><h2>'+esc(d.detailKnow)+'</h2>'+asList(s.rules)+'</div><div class="detail-section"><h2>'+esc(d.detailHelp)+'</h2>'+asList(s.help)+'</div><div class="detail-section"><h2>'+esc(d.detailWarning)+'</h2><p>'+esc(s.caution)+'</p><p>'+esc(d.detailBound)+'</p></div><div class="detail-extra"><h3>'+esc(d.detailChecked)+'</h3><p>'+esc(d.detailBound)+'</p></div></main><aside class="detail-sidebar"><h3>'+esc(d.detailSide)+'</h3><p>'+esc(d.detailSideText)+'</p>'+navLink("#/contact?service="+key,d.contact,"btn")+'<p class="detail-footnote">'+esc(d.noBooking)+'</p></aside></div></section>';
+return '<section class="detail-hero"><div class="container"><div class="crumb">'+navLink("#/",d.menu[0])+' / '+esc(s.title)+'</div><span class="eyebrow" style="color:#f1c6a9;margin-top:32px">'+esc(raw[key].tag)+'</span><h1>'+esc(s.title)+'</h1><p class="lead">'+esc(s.intro)+'</p></div></section><section class="section"><div class="container detail-main"><div><div class="detail-section"><h2>'+esc(s.title)+'</h2><p>'+esc(s.intro)+'</p></div><div class="detail-section"><h2>'+esc(d.detailPrep)+'</h2>'+asList(s.prep)+'</div><div class="detail-section"><h2>'+esc(d.detailKnow)+'</h2>'+asList(s.rules)+'</div><div class="detail-section"><h2>'+esc(d.detailHelp)+'</h2>'+asList(s.help)+'</div><div class="detail-section"><h2>'+esc(d.detailWarning)+'</h2><p>'+esc(s.caution)+'</p><p>'+esc(d.detailBound)+'</p></div><div class="detail-extra"><h3>'+esc(d.detailChecked)+'</h3><p>'+esc(d.detailBound)+'</p></div></div><aside class="detail-sidebar"><h3>'+esc(d.detailSide)+'</h3><p>'+esc(d.detailSideText)+'</p>'+navLink("#/contact?service="+key,d.contact,"btn")+'<p class="detail-footnote">'+esc(d.noBooking)+'</p></aside></div></section>';
 }
 function consult(){
 const d=WORDS[lang];document.title=d.contact+" | NEW CHAPTER";
