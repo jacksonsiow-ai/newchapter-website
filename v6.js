@@ -42,15 +42,16 @@ function heading(d,tag,h,desc){return '<div class="section-head"><div><span clas
 /* Curated original Singapore location descriptions and free-to-use Unsplash photo records.
    Photo download endpoints redirect to the photographer's original resource. */
 const photos={
-school:{id:"AzEaCUs3nmQ",alt:"Photograph of Nanyang Primary School in Singapore",label:"SINGAPORE SCHOOL"},
-campus:{id:"G1cvJ3auitE",alt:"Nanyang Technological University student services building, Singapore",label:"SINGAPORE CAMPUS"},
-city:{id:"buY6GF0aUSY",alt:"Singapore skyline and Gardens by the Bay",label:"SINGAPORE CITY"},
-garden:{id:"hHNYk7fTiDk",alt:"Supertree Grove at Gardens by the Bay, Singapore",label:"GARDENS BY THE BAY"},
-schoolLife:{id:"vsZvqAzjKHE",alt:"School building photographed in Singapore",label:"SINGAPORE EDUCATION"},
-nus:{id:"eUQlYrxGkI0",alt:"National University of Singapore campus building",label:"SINGAPORE UNIVERSITY"},
-night:{id:"9WwWGeHEbmQ",alt:"Gardens by the Bay Singapore evening lights",label:"SINGAPORE GARDENS"}
+school:{id:"photo-1595665455856-0141b6dd764a",alt:"Photograph of Nanyang Primary School in Singapore",label:"SINGAPORE SCHOOL"},
+campus:{id:"photo-1633111126270-f50f378fde68",alt:"Nanyang Technological University student services building, Singapore",label:"SINGAPORE CAMPUS"},
+city:{id:"photo-1760377964915-97c016103f44",alt:"Singapore skyline and Gardens by the Bay",label:"SINGAPORE CITY"},
+garden:{id:"photo-1506351421178-63b52a2d2562",alt:"Supertree Grove at Gardens by the Bay, Singapore",label:"GARDENS BY THE BAY"},
+schoolLife:{id:"photo-1595665455856-0141b6dd764a",alt:"School building photographed in Singapore",label:"SINGAPORE EDUCATION"},
+nus:{id:"photo-1707109462458-47cd3ece5cf0",alt:"National University of Singapore campus building",label:"SINGAPORE UNIVERSITY"},
+night:{id:"photo-1506351421178-63b52a2d2562",alt:"Gardens by the Bay Singapore evening lights",label:"SINGAPORE GARDENS"}
 };
-function photo(k){const p=photos[k]||photos.city;return '<img loading="lazy" decoding="async" alt="'+esc(p.alt)+'" src="https://unsplash.com/photos/'+p.id+'/download?force=true&w=1200&q=80" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1514612714221-9a54c860cb0f?auto=format&fit=crop&w=1200&q=75\';">'}
+function photo(k){const p=photos[k]||photos.city;return '<img loading="lazy" decoding="async" alt="'+esc(p.alt)+'" src="https://images.unsplash.com/'+p.id+'?auto=format&fit=crop&w=1200&q=82" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1514612714221-9a54c860cb0f?auto=format&fit=crop&w=1200&q=75\';">'}
+
 const servicePhotos={education:"school",parent:"garden",family:"city",pr:"city",citizenship:"campus",documents:"nus"};
 const scenes={
 vi:{
