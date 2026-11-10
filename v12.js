@@ -180,7 +180,7 @@ holder.addEventListener("click",ev=>{const button=ev.target.closest("button[data
 byId("plan-title").textContent=service(key).title;byId("plan-copy").textContent=WORDS[lang].planResult[index];byId("plan-link").href="#/service/"+key;byId("plan-contact").href="#/contact?service="+key});
 }
 function wireConsult(hash){
-const f=byId("interest-form");if(!f)return;const selected=(hash.match(/[?&]service=([a-z]+)/)||[])[1];if(KEYS.includes(selected))byId("interest").value=selected;
+const f=byId("interest-form");if(!f)return;const selected=(hash.match(/[?&]service=([a-zA-Z]+)/)||[])[1];if(KEYS.includes(selected))byId("interest").value=selected;
 f.addEventListener("submit",ev=>{ev.preventDefault();const key=byId("interest").value;if(!KEYS.includes(key))return;byId("interest-result").innerHTML='<div class="result">'+esc(WORDS[lang].contactResponse)+'<div style="margin-top:12px">'+navLink("#/service/"+key,WORDS[lang].contactLink,"text-link")+'</div></div>'});
 }
 function navigate(){shell();const hash=location.hash||"#/",key=hash.startsWith("#/service/")?hash.slice(10).split("?")[0]:"";const selected=(hash.match(/[?&]service=([a-z]+)/)||[])[1];byId("app").innerHTML=(V12_EXTRA[lang][key])?v12Page(key):(KEYS.includes(key)||key==="student")?v11Service(key):hash.startsWith("#/legal")?legalPage():hash.startsWith("#/contact")?v10Contact(selected):hash.startsWith("#/faq")?v10Faq():hash.startsWith("#/about")?v10About():v11Home();const menu=byId("nav");menu.classList.remove("open");byId("menu-btn").setAttribute("aria-expanded","false");const anchors={"#/services":"services","#/why":"why","#/process":"process"};if(anchors[hash])byId(anchors[hash])?.scrollIntoView({block:"start",behavior:"instant"});else window.scrollTo({top:0,behavior:"instant"})}
