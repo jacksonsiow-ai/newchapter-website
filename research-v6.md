@@ -27,3 +27,21 @@ Do not use generic or unidentified architecture images. No school photos may imp
 - Confirm registered activity, operating capability, professional service charges, legal terms and secure customer systems before launch.
 - Date-specific fees and timelines are deliberately omitted from v6.1 to reduce risk of stale information.
 - Do not treat simplified general summaries as individual eligibility advice.
+
+## Version 6.2 visual redesign — verified Singapore photograph references
+Verified against source photo listings on 10 Nov 2026. The source page describes the Singapore location and marks the asset "Free to use under the Unsplash License." Photos are illustrative, not evidence of New Chapter affiliations. Please recheck before commercial launch.
+
+- School photograph / Nanyang Primary School Gate E, Singapore. Photographer Bing Hui Yau; photo ID AzEaCUs3nmQ. Source https://unsplash.com/photos/brown-and-white-concrete-building-under-blue-sky-during-daytime-AzEaCUs3nmQ ; direct image https://images.unsplash.com/photo-1595665455856-0141b6dd764a
+- Campus / NTU Student Services Centre, Singapore. Photographer sakura yu; photo ID G1cvJ3auitE. Source https://unsplash.com/photos/a-building-with-a-sign-that-says-student-service-centre-G1cvJ3auitE ; direct image https://images.unsplash.com/photo-1633111126270-f50f378fde68
+- Skyline / Marina Bay and Gardens by the Bay, Singapore. Photographer Florian Delée; photo ID buY6GF0aUSY. Source https://unsplash.com/photos/modern-singapore-skyline-with-gardens-by-the-bay-buY6GF0aUSY ; direct image https://images.unsplash.com/photo-1760377964915-97c016103f44
+- Supertrees / Gardens by the Bay, Singapore. Photographer Duy Nguyen; photo ID 9WwWGeHEbmQ. Source https://unsplash.com/photos/gardens-by-the-bay-singapore-9WwWGeHEbmQ ; direct image https://images.unsplash.com/photo-1506351421178-63b52a2d2562
+- NUS Business School campus, Kent Ridge, Singapore. Photographer Chunjiang; photo ID eUQlYrxGkI0. Source https://unsplash.com/photos/a-building-with-a-large-glass-dome-on-top-of-it-eUQlYrxGkI0 ; direct image https://images.unsplash.com/photo-1707109462458-47cd3ece5cf0
+
+The photo library intentionally does not contain staged stock families pretending to be clients, fake team pictures, unverified HDB developments or fictional schools. An actual family-oriented lifestyle photo library may be acquired later with commercial rights and releases as appropriate.
+
+## Version 6.2 functional changes
+- Visible VI | EN language control. Browser localStorage remembers only the language code. No personal data stored by the journey planner.
+- Interactive journey selector uses six fixed information pathways, never predicts official approval.
+- Enquiry form still preview-only: no personal information entered, submitted or stored.
+- Homepage is more visually immersive and responsive, with image cards, Singapore story, gallery, family LTVP feature and action buttons.
+- Search indexing disabled via noindex while customer contact and data-protection procedures remain incomplete.
