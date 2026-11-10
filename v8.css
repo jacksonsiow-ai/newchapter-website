@@ -107,3 +107,28 @@
 @media(max-width:1050px){.v8-deliver-grid article{grid-column:span 3}.v8-deliver-grid article:nth-child(4),.v8-deliver-grid article:nth-child(5){grid-column:span 3}.v8-benefit-top{grid-template-columns:1fr}.v8-proof-grid,.v8-service-grid{gap:35px}}
 @media(max-width:800px){.v8-proof-grid,.v8-service-grid{grid-template-columns:1fr}.v8-proof-photo{height:425px}.v8-service-grid aside{padding:29px}.v8-benefit-top .lead{max-width:660px}}
 @media(max-width:600px){.hero,.hero-inner{min-height:690px}.hero h1{font-size:49px}.v8-compare{grid-template-columns:1fr}.v8-compare article{padding:26px 24px;min-height:0}.v8-deliver-grid{grid-template-columns:1fr;gap:10px;margin-top:30px}.v8-deliver-grid article,.v8-deliver-grid article:nth-child(4),.v8-deliver-grid article:nth-child(5){grid-column:auto;min-height:0;padding:25px}.v8-deliver-grid h3{font-size:25px;margin-top:16px}.v8-proof-photo{height:340px}.v8-next{padding:72px 0}.v8-next .heading{font-size:45px}.v8-service-grid aside{padding:24px}.v8-service-grid aside>p{padding:13px 0}.v8-benefit-top{margin-bottom:24px}}
+
+
+/* Detailed six-stage service support, version 8 service-page correction */
+.v8-deep-help{background:#faf9f5;padding:104px 0}
+.v8-deep-head{display:grid;grid-template-columns:1.25fr .75fr;column-gap:8%;align-items:end;margin-bottom:40px}
+.v8-deep-head>.eyebrow{grid-column:1/-1;color:#ab7155}
+.v8-deep-head .heading{font-size:clamp(39px,4.5vw,66px);line-height:1.12;max-width:850px;letter-spacing:-.035em}
+.v8-deep-head .lead{font-size:15px;line-height:1.95;max-width:460px;color:#5b716d}
+.v8-help-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.v8-help-step{display:flex;gap:23px;padding:39px 32px;background:#fffefa;border:1px solid #dce5de;min-height:222px;transition:border-color .2s,transform .2s}
+.v8-help-step:hover{border-color:#b2c9bb;transform:translateY(-3px)}
+.v8-help-index{color:#b78060;font:36px/1 Georgia,serif;flex:0 0 43px}
+.v8-help-step h3{font:400 clamp(23px,2vw,29px)/1.24 Georgia,serif;color:#143b3e;margin:0 0 13px}
+.v8-help-step p{font-size:13px;line-height:1.85;color:#5e726e;margin:0}
+.v8-help-outcome{display:flex;align-items:center;justify-content:space-between;gap:30px;background:#123e40;color:white;padding:44px 47px;margin-top:14px}
+.v8-help-outcome .eyebrow{color:#e3ae89}
+.v8-help-outcome h3{font:400 35px/1.15 Georgia,serif;margin:15px 0 12px}
+.v8-help-outcome p{font-size:13px;line-height:1.8;max-width:650px;color:#e0ece4}
+.v8-help-outcome .btn{white-space:nowrap}
+.v8-requirements{background:#e9efe9;padding:72px 0}
+.v8-requirements-grid{display:grid;grid-template-columns:1fr 1fr;gap:8%}
+.v8-requirements-grid h2{font:400 32px/1.2 Georgia,serif;margin:14px 0 24px;color:#173c3e}
+.v8-requirements-grid li{font-size:13px;line-height:1.95;color:#4b6763;margin:0 0 12px}
+@media(max-width:800px){.v8-deep-head{grid-template-columns:1fr;gap:12px}.v8-help-outcome{align-items:flex-start;flex-direction:column}.v8-requirements-grid{gap:28px}}
+@media(max-width:640px){.v8-deep-help{padding:68px 0}.v8-deep-head .heading{font-size:40px}.v8-deep-head .lead{font-size:13px}.v8-help-steps{grid-template-columns:1fr;gap:9px}.v8-help-step{padding:27px 22px;min-height:0;gap:17px}.v8-help-index{font-size:29px;flex-basis:37px}.v8-help-step h3{font-size:25px}.v8-help-step p{font-size:13px}.v8-help-outcome{padding:30px 25px}.v8-help-outcome h3{font-size:28px}.v8-requirements-grid{grid-template-columns:1fr}.v8-requirements{padding:55px 0}}
