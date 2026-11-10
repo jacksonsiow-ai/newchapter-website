@@ -58,7 +58,7 @@ byId("nav").innerHTML=[["#/","menu",0],["#/why","menu",1],["#/services","menu",2
 byId("header-cta").textContent=d.contact;
 for(const k of ["vi","en"]){const el=byId("lang-"+k);el.classList.toggle("active",lang===k);el.setAttribute("aria-pressed",String(lang===k))}
 byId("footer-contact").textContent=d.contact;byId("footer-company").textContent=lang==="vi"?"Thông tin doanh nghiệp":"Company information";
-byId("version").textContent="© NEW CHAPTER";
+
 }
 function homepage(){
 const d=WORDS[lang];document.title="NEW CHAPTER | "+(lang==="vi"?"Giáo dục · Di trú · Gia đình":"Education · Immigration · Family");
